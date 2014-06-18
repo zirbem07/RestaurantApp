@@ -6,7 +6,7 @@ $(document).ready(function() {
     });
 
 
-    $("#button").click(function (e) {
+    $(".btn").click(function (e) {
         var selected = $("#checkboxes input:checked").map(function(index, element) {
             return element.name;
         }).get();
