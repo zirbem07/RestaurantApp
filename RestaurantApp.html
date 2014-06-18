@@ -23,26 +23,6 @@
     <![endif]-->
 </head>
 <body>
-    <ul>
-        <li id="rest1" class="restaurant">Restaurant 1</li>
-        <li id="rest2" class="restaurant">Restaurant 2</li>
-    </ul>
-
-    <div class="menu" id="menuItemsrest1" style="display:none">
-        <ul id="checkboxes">
-            <li><input type="checkbox" id="chk1" name="steak!" />Steak</li>
-            <li><input type="checkbox" id="chk6" name="chicken?" />Chicken</li>
-        </ul>
-    </div>
-    <div id="menuItemsrest2" class="menu" style="display:none" >
-        <ul id="checkboxes">
-            <li><input type="checkbox" id="chk2" name="chickens?" />LIST ITEM 2</li>
-        </ul>
-    </div>
-    <div>
-        <button id="button">Submit</button>
-    </div>
-
     <div class="container">
         <div class="row clearfix">
             <div class="col-md-6 column">
@@ -56,59 +36,64 @@
         <div class="row clearfix">
             <div class="col-md-6 column">
                 <ul class="list-unstyled">
-                    <li>
+                    <li id="rest1"  class="restaurant">
                         In-n-Out
                     </li>
-                    <li>
+                    <li id="rest2"  class="restaurant">
                        Daily Bagel Cafe
                     </li>
-                    <li>
+                    <li id="rest3"  class="restaurant">
                         Restaurant 3
                     </li>
-                    <li>
+                    <li id="rest4"  class="restaurant">
                         Restaurant 4
                     </li>
-                    <li>
+                    <li id="rest5"  class="restaurant">
                         Restaurant 5
                     </li>
-                    <li>
+                    <li id="rest6"  class="restaurant">
                         Restaurant 6
                     </li>
-                    <li>
+                    <li id="rest7"  class="restaurant">
                         Restaurant 7
                     </li>
-                    <li>
+                    <li id="rest8"  class="restaurant">
                         Restaurant 8
                     </li>
                 </ul>
             </div>
             <div class="col-md-6 column">
-                <ul class="list-unstyled">
-                    <li>
-                        Lorem ipsum dolor sit amet
-                    </li>
-                    <li>
-                        Consectetur adipiscing elit
-                    </li>
-                    <li>
-                        Integer molestie lorem at massa
-                    </li>
-                    <li>
-                        Facilisis in pretium nisl aliquet
-                    </li>
-                    <li>
-                        Nulla volutpat aliquam velit
-                    </li>
-                    <li>
-                        Faucibus porta lacus fringilla vel
-                    </li>
-                    <li>
-                        Aenean sit amet erat nunc
-                    </li>
-                    <li>
-                        Eget porttitor lorem
-                    </li>
-                </ul>
+                <div class="menu" id="menuItemsrest1" style="display:none" >
+                    <ul class="list-unstyled"  id="checkboxes">
+                        <li><input type="checkbox" name="steak!" />
+                            Lorem ipsum dolor sit amet
+                        </li>
+                        <li><input type="checkbox" name="steak!" />
+                            Consectetur adipiscing elit
+                        </li>
+                        <li><input type="checkbox" name="steak!" />
+                            Integer molestie lorem at massa
+                        </li>
+                        <li><input type="checkbox" name="steak!" />
+                            Facilisis in pretium nisl aliquet
+                        </li>
+                        <li><input type="checkbox" name="steak!" />
+                            Nulla volutpat aliquam velit
+                        </li>
+                        <li><input type="checkbox"  name="steak!" />
+                            Faucibus porta lacus fringilla vel
+                        </li>
+                        <li><input type="checkbox" name="steak!" />
+                            Aenean sit amet erat nunc
+                        </li>
+                        <li><input type="checkbox" name="steak!" />
+                            Eget porttitor lorem
+                        </li>
+                    </ul>
+                    <div>
+                        <button id="button">Submit</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
