@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     $(".restaurant").click(function () {
         $(".menu").hide();
-        $("#menuItems" + $(this).attr("id")).show();
+        $("#menuItems" + $(this).attr("id")).fadeIn();
 
         $('#nameDiv').html($(this).text());
 
