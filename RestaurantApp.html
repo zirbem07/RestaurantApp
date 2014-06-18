@@ -1,185 +1,187 @@
 <!Doctype html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Restaurant Application</title>
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="js/RestaurantAppCtrl.js"></script>
-    <script src="RestaurantAppCtrl.js"></script>
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet"  href="css/layout.css">
-    <script src="js/bootstrap.min.js"></script>
-</head>
-<body>
-    <div class="container">
-        <div class="row clearfix">
-            <div class="col-md-offset-5">
-                <h1>
-                   Restaurant App
-                </h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-offset-5">
-                <label>User Name:</label>
-                <input type="text" name="UserName" />
-                <br /><br />
-            </div>
-        </div>
-        <div class="row clearfix">
-            <div class="col-md-6 column">
-                <ul class="list-unstyled list-group">
-                    <li id="rest1"  class="restaurant list-group-item scaled">
-                        In-n-Out
-                    </li>
-                    <li id="rest2"  class="restaurant list-group-item scaled">
-                       Daily Bagel Cafe
-                    </li>
-                    <li id="rest3"  class="restaurant list-group-item scaled">
-                        Restaurant 3
-                    </li>
-                    <li id="rest4"  class="restaurant list-group-item scaled">
-                        Restaurant 4
-                    </li>
-                    <li id="rest5"  class="restaurant list-group-item scaled">
-                        Restaurant 5
-                    </li>
-                    <li id="rest6"  class="restaurant list-group-item scaled">
-                        Restaurant 6
-                    </li>
-                    <li id="rest7"  class="restaurant list-group-item scaled">
-                        Restaurant 7
-                    </li>
-                    <li id="rest8"  class="restaurant list-group-item scaled">
-                        Restaurant 8
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-offset-6 column">
-                <div class="menu" id="menuItemsrest1" style="display:none" ><!-- In n out -->
-                    <ul class="list-group list-unstyled"  id="checkboxes">
-                        <li class="list-group-item"><input type="checkbox" name="Cheseburger" />
-                            Cheeseburger
-                        </li>
-                        <li class="list-group-item"><input type="checkbox" name="Hamburger"/>
-                            Hamburger
-                        </li>
-                        <li class="list-group-item"><input type="checkbox" name="Fries"/>
-                            Fries
-                        </li>
-                        <li class="list-group-item"><input type="checkbox" name="Double-Double"/>
-                            Double-Double
-                        </li>
-                        <li class="list-group-item"><input type="checkbox" name="3x3" />
-                            3x3
-                        </li>
-                        <li class="list-group-item"><input type="checkbox"  name="4x4" />
-                            4x4
-                        </li>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Restaurant Application</title>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="js/RestaurantAppCtrl.js"></script>
+        <script src="RestaurantAppCtrl.js"></script>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet"  href="css/layout.css">
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
 
-                        <li class="list-group-item"><input type="checkbox" name="Protein Style"/>
-                            Protein Style
-                        </li>
-                        <li class="list-group-item"><input type="checkbox" name="Animal Style" />
-                            Animal Style
-                        </li>
-                    </ul>
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-md-offset-5">
+                    <h1>
+                       Restaurant App
+                    </h1>
                 </div>
-                <div>
-                   <button id="button" class="btn btn-primary">Submit</button>
+            </div> <!-- End Row Title -->
+
+            <div class="row">
+                <div class="col-md-offset-2">
+                    <label>User Name:</label>
+                    <input type="text" name="UserName" />
+                    <br /><br />
                 </div>
-            </div>
-<!-- In n out -->
+            </div> <!-- end row user name -->
 
-                <div class="menu" id="menuItemsrest2" style="display:none" ><!-- Daily Bagel Cafe -->
-                    <ul class="list-group list-unstyled"  id="checkboxes">
-                        <li class="list-group-item"><input type="checkbox" name="Ceasar Salad" />
-                            Caesar Salad W/ Chicken Breast
-                        </li>
-                        <li class="list-group-item"><input type="checkbox" name="B.L.T."/>
-                            B.l.t. (bacon, Lettuce & Tomato)
-                        </li>
-                        <li class="list-group-item"><input type="checkbox" name="Roast Beef / Ham / Salami"/>
-                            Roast Beef / Ham / Salami
+            <div class="row clearfix">
 
+                <div class="col-md-6 column">
+                    <h3><strong>Resturants</strong></h3>
+                    <ul class="list-unstyled list-group">
+                        <li id="rest1"  class="restaurant list-group-item scaled">
+                            In-n-Out
                         </li>
-                        <li class="list-group-item"><input type="checkbox" name="Pastrami"/>
-                            Pastrami (served Hot Or Cold)
-
+                        <li id="rest2"  class="restaurant list-group-item scaled">
+                           Daily Bagel Cafe
                         </li>
-                        <li class="list-group-item"><input type="checkbox" name="Turkey / Chicken Breast" />
-                            Turkey / Chicken Breast
-
+                        <li id="rest3"  class="restaurant list-group-item scaled">
+                            Teo Chow Noodles
                         </li>
-                        <li class="list-group-item"><input type="checkbox"  name="Chicken Salad" />
-                           Chicken Salad Supreme (chicken Salad, Cheese & Avocado)
-
+                        <li id="rest4"  class="restaurant list-group-item scaled">
+                            Restaurant 4
                         </li>
-
-                        <li class="list-group-item"><input type="checkbox" name="Supreme"/>
-                           Supreme (roast Beef, Ham, & Cheese)
+                        <li id="rest5"  class="restaurant list-group-item scaled">
+                            Restaurant 5
                         </li>
-                        <li class="list-group-item"><input type="checkbox" name="Nova Lox & Cream Cheese" />
-                            Nova Lox & Cream Cheese
-
+                        <li id="rest6"  class="restaurant list-group-item scaled">
+                            Restaurant 6
+                        </li>
+                        <li id="rest7"  class="restaurant list-group-item scaled">
+                            Restaurant 7
+                        </li>
+                        <li id="rest8"  class="restaurant list-group-item scaled">
+                            Restaurant 8
                         </li>
                     </ul>
-
-                     </div><!-- Daily Bagel Cafe -->
-                <div class="menu" id="menuItemsrest3" style="display:none" ><!-- Daily Bagel Cafe -->
-                    <ul class="list-group list-unstyled"  id="checkboxes">
-                        <li class="list-group-item"><input type="checkbox" name="steak!" />
-                            1
-                        </li>
-                        <li class="list-group-item"><input type="checkbox" name="steak!"/>
-                            2
-                        </li>
-                        <li class="list-group-item"><input type="checkbox" name="steak!"/>
-                           3
-
-                        </li>
-                        <li class="list-group-item"><input type="checkbox" name="steak!"/>
-                           4
-
-                        </li>
-                        <li class="list-group-item"><input type="checkbox" name="steak!" />
-                          5
-                        </li>
-                        <li class="list-group-item"><input type="checkbox"  name="steak!" />
-                          6
-
-                        </li>
-
-                        <li class="list-group-item"><input type="checkbox" name="steak!"/>
-                        7
-                        </li>
-                        <li class="list-group-item"><input type="checkbox" name="steak!" />
-                         8
-
-                        </li>
-                    </ul>
-
-                     </div><!-- Daily Bagel Cafe -->
+                </div><!-- End row restaurant list -->
 
 
+                <!-- Begin Restaurant 1 -->
+                <div class="col-md-offset-7 column">
+                    <h3 id="nameDiv"></h3>
+                    <div class="menu" id="menuItemsrest1" style="display:none" >
+                        <ul class="list-group list-unstyled"  id="checkboxes">
+                            <li class="list-group-item"><input type="checkbox" name="Cheseburger" />
+                                Cheeseburger
+                            </li>
+                            <li class="list-group-item"><input type="checkbox" name="Hamburger"/>
+                                Hamburger
+                            </li>
+                            <li class="list-group-item"><input type="checkbox" name="Fries"/>
+                                Fries
+                            </li>
+                            <li class="list-group-item"><input type="checkbox" name="Double-Double"/>
+                                Double-Double
+                            </li>
+                            <li class="list-group-item"><input type="checkbox" name="3x3" />
+                                3x3
+                            </li>
+                            <li class="list-group-item"><input type="checkbox"  name="4x4" />
+                                4x4
+                            </li>
 
-   <button id="button">Submit</button>
-
-
-
-                   
-                        
-=======
-                     <div>
-                        <button id="button" class="btn btn-primary">Submit</button>
->>>>>>> master
+                            <li class="list-group-item"><input type="checkbox" name="Protein Style"/>
+                                Protein Style
+                            </li>
+                            <li class="list-group-item"><input type="checkbox" name="Animal Style" />
+                                Animal Style
+                            </li>
+                        </ul>
+                        <div>
+                           <button id="button" class="btn btn-primary">Submit</button>
+                        </div>
                     </div>
+                <!-- End restaurant 1 -->
+
+
+                <!-- Begin Restaurant 2 -->
+                    <div class="menu" id="menuItemsrest2" style="display:none" >
+                        <ul class="list-group list-unstyled"  id="checkboxes">
+                            <li class="list-group-item">
+                                <input type="checkbox" name="Ceasar Salad" />
+                                Caesar Salad W/ Chicken Breast
+                            </li>
+                            <li class="list-group-item">
+                                <input type="checkbox" name="B.L.T."/>
+                                B.l.t. (bacon, Lettuce & Tomato)
+                            </li>
+                            <li class="list-group-item">
+                                <input type="checkbox" name="Roast Beef / Ham / Salami"/>
+                                Roast Beef / Ham / Salami
+                            </li>
+                            <li class="list-group-item">
+                                <input type="checkbox" name="Pastrami"/>
+                                Pastrami (served Hot Or Cold)
+                            </li>
+                            <li class="list-group-item">
+                                <input type="checkbox" name="Turkey / Chicken Breast" />
+                                Turkey / Chicken Breast
+                            </li>
+                            <li class="list-group-item">
+                                <input type="checkbox"  name="Chicken Salad" />
+                               Chicken Salad Supreme (chicken Salad, Cheese & Avocado)
+                            </li>
+
+                            <li class="list-group-item">
+                                <input type="checkbox" name="Supreme"/>
+                               Supreme (roast Beef, Ham, & Cheese)
+                            </li>
+                            <li class="list-group-item">
+                                <input type="checkbox" name="Nova Lox & Cream Cheese" />
+                                Nova Lox & Cream Cheese
+                            </li>
+                        </ul>
+                        <div>
+                            <button id="button" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                <!-- End restaurant 2 -->
+
+                <!-- Begin restaurant 3 -->
+                    <div class="menu" id="menuItemsrest3" style="display:none" >
+                        <ul class="list-group list-unstyled"  id="checkboxes">
+                            <li class="list-group-item"><input type="checkbox" name="Teo Chow House Pan Fried Noodles" />
+                                Teo Chow House Pan Fried Noodles
+                            </li>
+                            <li class="list-group-item"><input type="checkbox" name="Black Bean Sauce Chicken or Beef over Rice"/>
+                                Black Bean Sauce Chicken or Beef over Rice
+                            </li>
+                            <li class="list-group-item"><input type="checkbox" name="Broccoli & Chicken"/>
+                                Broccoli & Chicken
+                            </li>
+                            <li class="list-group-item"><input type="checkbox" name="Salt & Pepper Fish Fillet"/>
+                                Salt & Pepper Fish Fillet
+                            </li>
+                            <li class="list-group-item"><input type="checkbox" name="Mongolian Beef" />
+                                Mongolian Beef
+                            </li>
+                            <li class="list-group-item"><input type="checkbox"  name="Salt & Pepper Chicken Wings" />
+                                Salt & Pepper Chicken Wings
+                            </li>
+
+                            <li class="list-group-item"><input type="checkbox" name="Lemon Chicken"/>
+                                Lemon Chicken
+                            </li>
+                            <li class="list-group-item"><input type="checkbox" name="General" />
+                                General
+                            </li>
+                        </ul>
+                        <div>
+                            <button id="btn" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div> <!-- Teo Chow Noodles -->
+                <!-- End restaurant 3 -->
                 </div>
-            </div>
-        </div>
-    </div>
-</body>
+            </div> <!-- End Menus Row -->
+        </div> <!-- End Container -->
+    </body>
 </html>

@@ -2,11 +2,14 @@ $(document).ready(function() {
 
     $(".restaurant").click(function () {
         $(".menu").hide();
-        $("#menuItems" + $(this).attr("id")).show();
+        $("#menuItems" + $(this).attr("id")).fadeIn();
+
+        $('#nameDiv').html($(this).text());
+
     });
 
 
-    $("#button").click(function (e) {
+    $(".btn").click(function (e) {
         var selected = $("#checkboxes input:checked").map(function(index, element) {
             return element.name;
         }).get();
@@ -18,7 +21,15 @@ $(document).ready(function() {
             $(this).prop("checked", false);
         });
 
+        //un email phone contactMethod restaurantName order
+        var data = "Max:zirbel@gmai.com:123:phone:McDonalds:"+ selected;
+        storeData(data);
+
     });
 
+    var storeData = function(data)
+    {
+
+    }
 
 });
