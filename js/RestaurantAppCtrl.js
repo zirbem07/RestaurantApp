@@ -6,6 +6,10 @@ $(document).ready(function() {
 
         $('#nameDiv').html($(this).text());
 
+        $('input[type=checkbox]').each(function () {
+            $(this).prop("checked", false);
+        });
+
     });
 
 
