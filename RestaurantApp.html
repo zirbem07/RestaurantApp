@@ -3,10 +3,28 @@
 <head>
     <title>Restaurant Application</title>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="RestaurantAppCtrl.js"></script>
+    <script src="js/RestaurantAppCtrl.js"></script>
     <link rel="stylesheet"  href="css/layout.css">
 </head>
 <body>
+    <ul>
+        <li id="rest1" class="restaurant">Restaurant 1</li>
+        <li id="rest2" class="restaurant">Restaurant 2</li>
+    </ul>
 
+    <div class="menu" id="menuItemsrest1" style="display:none">
+        <ul id="checkboxes">
+            <li><input type="checkbox" id="chk1" name="steak!" />Steak</li>
+            <li><input type="checkbox" id="chk6" name="chicken?" />Chicken</li>
+        </ul>
+    </div>
+    <div id="menuItemsrest2" class="menu" style="display:none" >
+        <ul id="checkboxes">
+            <li><input type="checkbox" id="chk2" name="chickens?" />LIST ITEM 2</li>
+        </ul>
+    </div>
+    <div>
+        <button id="button">Submit</button>
+    </div>
 </body>
 </html>
