@@ -3,6 +3,9 @@ $(document).ready(function() {
     $(".restaurant").click(function () {
         $(".menu").hide();
         $("#menuItems" + $(this).attr("id")).show();
+
+        $('#nameDiv').html($(this).text());
+
     });
 
 
@@ -18,7 +21,15 @@ $(document).ready(function() {
             $(this).prop("checked", false);
         });
 
+        //un email phone contactMethod restaurantName order
+        var data = "Max:zirbel@gmai.com:123:phone:McDonalds:"+ selected;
+        storeData(data);
+
     });
 
+    var storeData = function(data)
+    {
+
+    }
 
 });
