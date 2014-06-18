@@ -27,6 +27,7 @@
         <entry file="file://$PROJECT_DIR$/RestaurantApp.html">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state vertical-scroll-proportion="0.17595308" vertical-offset="0" max-vertical-offset="682">
               <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
               <folding>
@@ -36,6 +37,10 @@
 =======
             <state vertical-scroll-proportion="0.40615836" vertical-offset="578" max-vertical-offset="1560">
               <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
+=======
+            <state vertical-scroll-proportion="0.8020528" vertical-offset="803" max-vertical-offset="1620">
+              <caret line="90" column="19" selection-start-line="90" selection-start-column="19" selection-end-line="90" selection-end-column="19" />
+>>>>>>> 1ecaadcd430e4482b652ab8e955952af3dac8c3a
               <folding />
 >>>>>>> 3937a122b667a95b32c366b03b67497252e53f4a
             </state>
@@ -59,12 +64,17 @@
   </component>
   <component name="ProjectFrameBounds">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="x" value="3" />
     <option name="y" value="22" />
 =======
     <option name="x" value="136" />
     <option name="y" value="131" />
 >>>>>>> 3937a122b667a95b32c366b03b67497252e53f4a
+=======
+    <option name="x" value="571" />
+    <option name="y" value="40" />
+>>>>>>> 1ecaadcd430e4482b652ab8e955952af3dac8c3a
     <option name="width" value="1560" />
     <option name="height" value="803" />
   </component>
@@ -110,6 +120,48 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="RestaurantApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RestaurantApplication" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RestaurantApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RestaurantApplication" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RestaurantApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fonts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RestaurantApplication" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RestaurantApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -179,10 +231,14 @@
   </component>
   <component name="ToolWindowManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <frame x="3" y="22" width="1560" height="803" extended-state="0" />
     <editor active="false" />
 =======
     <frame x="136" y="131" width="1560" height="803" extended-state="0" />
+=======
+    <frame x="571" y="40" width="1560" height="803" extended-state="0" />
+>>>>>>> 1ecaadcd430e4482b652ab8e955952af3dac8c3a
     <editor active="true" />
 >>>>>>> 3937a122b667a95b32c366b03b67497252e53f4a
     <layout>
@@ -269,6 +325,7 @@
     <entry file="file://$PROJECT_DIR$/RestaurantApp.html">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.17595308" vertical-offset="0" max-vertical-offset="682">
           <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
           <folding>
@@ -278,6 +335,10 @@
 =======
         <state vertical-scroll-proportion="0.40615836" vertical-offset="578" max-vertical-offset="1560">
           <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
+=======
+        <state vertical-scroll-proportion="0.8020528" vertical-offset="803" max-vertical-offset="1620">
+          <caret line="90" column="19" selection-start-line="90" selection-start-column="19" selection-end-line="90" selection-end-column="19" />
+>>>>>>> 1ecaadcd430e4482b652ab8e955952af3dac8c3a
           <folding />
 >>>>>>> 3937a122b667a95b32c366b03b67497252e53f4a
         </state>
