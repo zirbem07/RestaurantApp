@@ -2,9 +2,14 @@ $(document).ready(function() {
 
     $(".restaurant").click(function () {
         $(".menu").hide();
-        $("#menuItems" + $(this).attr("id")).fadeIn();
+        $("#menuItems" + $(this).attr("id")).fadeIn("slow");
 
-        $('#nameDiv').html($(this).text());
+        $('#nameDiv').hide();
+        $('#nameDiv').html($(this).text()).fadeIn("slow");
+
+        $('input[type=checkbox]').each(function () {
+            $(this).prop("checked", false);
+        });
 
     });
 
