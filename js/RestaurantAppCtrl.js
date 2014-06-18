@@ -20,21 +20,35 @@ $(document).ready(function() {
         }).get();
 
         selected = selected.join(",");
-        alert(selected);
-
-        $('input[type=checkbox]').each(function () {
-            $(this).prop("checked", false);
-        });
 
         //un email phone contactMethod restaurantName order
-        var data = "Max:zirbel@gmai.com:123:phone:McDonalds:"+ selected;
-        storeData(data);
+        var un = $('#un').val();
+        if(un == ""){
+            alert("error You must enter a user name");
+        } else {
+            var restaurant = $('#nameDiv').html();
+            var date = new Date().toDateString();
+            var data = un + ":" + restaurant + ":" + date + ":" + selected;
+            storeData(data);
+
+            $('input[type=checkbox]').each(function () {
+                $(this).prop("checked", false);
+            });
+
+            $('#un').val("");
+        }
 
     });
 
     var storeData = function(data)
     {
+        //Data Format: User Name : Restaurant Name : Date : Item1,Item2,Ect...
+        localStorage.setItem("restApp", data);
+    }
 
+    for(var i in localStorage)
+    {
+        console.log(localStorage[i]);
     }
 
 });
