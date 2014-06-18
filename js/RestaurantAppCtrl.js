@@ -1,9 +1,9 @@
 $(document).ready(function() {
+
     $(".restaurant").click(function () {
         $(".menu").hide();
         $("#menuItems" + $(this).attr("id")).show();
     });
-
 
 
     $("#button").click(function (e) {
@@ -19,4 +19,6 @@ $(document).ready(function() {
         });
 
     });
+
+
 });
