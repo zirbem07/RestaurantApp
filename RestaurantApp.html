@@ -7,7 +7,6 @@
         <title>Restaurant Application</title>
         <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="js/RestaurantAppCtrl.js"></script>
-        <script src="RestaurantAppCtrl.js"></script>
         <!-- Bootstrap -->
         <link href="css/bootstrap.css" rel="stylesheet">
         <link rel="stylesheet"  href="css/layout.css">
@@ -17,7 +16,7 @@
 
         <div class="container">
             <div class="row clearfix">
-                <div class="col-md-offset-5">
+                <div class="col-md-offset-4">
                     <h1>
                        Restaurant App
                     </h1>
@@ -27,7 +26,7 @@
             <div class="row">
                 <div class="col-md-offset-2">
                     <label>User Name:</label>
-                    <input type="text" name="UserName" />
+                    <input type="text" id="un" name="UserName" />
                     <br /><br />
                 </div>
             </div> <!-- end row user name -->
@@ -67,7 +66,7 @@
 
                 <!-- Begin Restaurant 1 -->
                 <div class="col-md-offset-7 column">
-                    <h3 id="nameDiv"></h3>
+                    <h3 id="nameDiv" style="display:none"></h3>
                     <div class="menu" id="menuItemsrest1" style="display:none" >
                         <ul class="list-group list-unstyled"  id="checkboxes">
                             <li class="list-group-item"><input type="checkbox" name="Cheseburger" />
