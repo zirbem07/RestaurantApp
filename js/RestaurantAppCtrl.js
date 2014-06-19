@@ -13,6 +13,11 @@ $(document).ready(function() {
 
     });
 
+    $(function () {
+        $("#accordion").accordion();
+    });
+
+
 
     $(".btn").click(function (e) {
         var selected = $("#checkboxes input:checked").map(function(index, element) {
@@ -30,7 +35,8 @@ $(document).ready(function() {
             var restaurant = $('#nameDiv').html();
             var date = new Date().toDateString();
             var data = un + ":" + restaurant + ":" + date + ":" + selected;
-            storeData(data);
+            var key = new Date();
+            storeData(key, data);
 
             $('input[type=checkbox]').each(function () {
                 $(this).prop("checked", false);
@@ -41,15 +47,27 @@ $(document).ready(function() {
 
     });
 
-    var storeData = function(data)
+    var storeData = function(key, data)
     {
         //Data Format: User Name : Restaurant Name : Date : Item1,Item2,Ect...
-        localStorage.setItem("restApp", data);
+        localStorage.setItem(key, data);
     }
 
     for(var i in localStorage)
     {
-        console.log(localStorage[i]);
+        var arr = localStorage[i].split(":");
+        var name = arr[0];
+        var rest = arr[1];
+        var date = arr[2];
+        var title = "<h3><strong>Name:</strong> " + name +"&nbsp<strong>Restaurant:</strong> "+ rest +"<strong>Date:</strong>  "+ date + " </h3>";
+        var arr2 = arr[3].split(",");
+        var items = "<div>";
+        for(var index in arr2){
+            items += "<span>" + arr2[index] + "</span><br />";
+        }
+        items += "</div>";
+        var content = title + items;
+        $('#accordion').append(content)
     }
 
 });
