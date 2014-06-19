@@ -16,6 +16,7 @@ $(document).ready(function() {
 
     $(".btn").click(function (e) {
         var selected = $("#checkboxes input:checked").map(function(index, element) {
+            alert($(this).attr("data-price"));
             return element.name;
         }).get();
 
