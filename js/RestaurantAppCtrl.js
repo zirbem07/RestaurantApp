@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+       var total = 0;
+
     $(".restaurant").click(function () {
         $(".menu").hide();
         $("#menuItems" + $(this).attr("id")).fadeIn("slow");
@@ -21,10 +23,11 @@ $(document).ready(function() {
 
     $(".btn").click(function (e) {
         var selected = $("#checkboxes input:checked").map(function(index, element) {
-            alert($(this).attr("data-price"));
+            total += parseInt($(this).attr("data-price") ,10);
             return element.name;
         }).get();
 
+        alert(total);
         selected = selected.join(",");
 
         //un email phone contactMethod restaurantName order
@@ -34,7 +37,7 @@ $(document).ready(function() {
         } else {
             var restaurant = $('#nameDiv').html();
             var date = new Date().toDateString();
-            var data = un + ":" + restaurant + ":" + date + ":" + selected;
+            var data = un + ":" + restaurant + ":" + date + ":" + total + ":" + selected;
             var key = new Date();
             storeData(key, data);
 
