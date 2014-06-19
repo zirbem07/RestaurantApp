@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Restaurant Application</title>
         <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
         <script src="js/RestaurantAppCtrl.js"></script>
         <!-- Bootstrap -->
         <link href="css/bootstrap.css" rel="stylesheet">
@@ -69,7 +71,7 @@
                     <h3 id="nameDiv" style="display:none"></h3>
                     <div class="menu" id="menuItemsrest1" style="display:none" >
                         <ul class="list-group list-unstyled"  id="checkboxes">
-                            <li class="list-group-item"><input type="checkbox" name="Cheseburger" />
+                            <li class="list-group-item"><input type="checkbox" name="Cheeseburger" />
                                 Cheeseburger
                             </li>
                             <li class="list-group-item"><input type="checkbox" name="Hamburger"/>
@@ -164,7 +166,7 @@
                                 Mongolian Beef
                             </li>
                             <li class="list-group-item"><input type="checkbox" data-price="5" name="Salt & Pepper Chicken Wings" />
-                                Salt & Pepper Chicken Wings
+                                Salt & Pepper Chicken Wings <span class="pull-right">$5.00</span>ß
                             </li>
 
                             <li class="list-group-item"><input type="checkbox" name="Lemon Chicken"/>
@@ -360,14 +362,17 @@
                         </div>
                     </div>  <!--  five guys -->
                     <!-- End restaurant 8 -->
-
-
-
-
-
-
                 </div>
             </div> <!-- End Menus Row -->
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Order History</h3>
+                    <div id="accordion">
+
+                    </div>
+                    <br /><br />
+                </div>
+            </div>
         </div> <!-- End Container -->
     </body>
 </html>
