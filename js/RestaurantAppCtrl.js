@@ -39,13 +39,14 @@ $(document).ready(function() {
         }).get();
 
         //find extras if any added
-        var extras = $.trim($("#extras").val());
-        alert(extras);
+        //alert($(this).parent());
+        //var extras = $.trim($("#extras").val());
+        //alert(extras);
             //if the input field is empty
-        if (extras == "") {
-            extras="None"
-            //
-        };
+        //if (extras == "") {
+       //     extras="None"
+
+       // };
 
 
         //make sure the user selected at least one order
@@ -61,6 +62,7 @@ $(document).ready(function() {
                 var restaurant = $('#nameDiv').html();
                 var date = new Date().toDateString();
                 var data = un + ":" + restaurant + ":" + date + ":" + total + ":" + selected;
+                //var data = un + ":" + restaurant + ":" + date + ":" + total + ":" + extras +":" + selected;
                 var key = new Date();
                 storeData(key, data);
 
@@ -104,13 +106,16 @@ $(document).ready(function() {
         var rest = $.trim(arr[1]);
         var date = arr[2];
         var total = arr[3];
+        //var extra = arr[4];
         var title = "<h3><strong>Name:</strong> " + name +"<strong>   Restaurant:</strong> "+ rest +"<strong>  Date:</strong>  "+ date + " </h3>";
         var arr2 = arr[4].split(",");
+        //var arr2 = arr[5].split(",");
         var items = "<div>";
         for(var index in arr2){
             items += "<p>" + arr2[index] + "</p>";
         }
         items += "<span class='pull-right'><strong>Total: </strong> $"+total+ " </span></div>";
+        //items += "<span class='pull-left'><strong>Extras: </strong>"+extra+"</span><span class='pull-right'><strong>Total: </strong> $"+total+ " </span></div>";
         var content = title + items;
         $('#accordion').append(content);
         $('#accordion').accordion('refresh');
