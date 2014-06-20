@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    //load firebase data
+    //load all current Firebase data
     var myDataRef = new Firebase('https://blistering-fire-5092.firebaseio.com/');
     myDataRef.once('value', function(dataSnapshot) {
         dataSnapshot.forEach(function(allDataSnapshot) {
