@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+    //Variable for data chart
+    var inout = 0, bagel = 0,noodles =0, afghanan = 0, sushi = 0, togo = 0, unamas = 0, fiveGuys = 0;
+
     //load all current Firebase data
     var myDataRef = new Firebase('https://blistering-fire-5092.firebaseio.com/');
     myDataRef.once('value', function(dataSnapshot) {
@@ -88,7 +91,7 @@ $(document).ready(function() {
     function displayOrderHistory(data) {
         var arr = data.split(":")
         var name = arr[0];
-        var rest = arr[1];
+        var rest = $.trim(arr[1]);
         var date = arr[2];
         var total = arr[3];
         var title = "<h3><strong>Name:</strong> " + name +"<strong> Restaurant:</strong> "+ rest +"<strong>Date:</strong>  "+ date + " </h3>";
@@ -102,7 +105,58 @@ $(document).ready(function() {
         $('#accordion').append(content);
         $('#accordion').accordion('refresh');
 
+        switch(rest) {
+            case 'In-n-Out':
+                inout++;
+                break;
+            case 'Daily Bagel Cafe':
+                bagel++;
+                break;
+            case 'Teo Chow Noodles':
+                noodles++;
+                break;
+            case 'De Afghanan Cuisine':
+                afghanan++;
+                break;
+            case "Aniki's Sushi":
+                sushi++;
+                break;
+            case "Togo's":
+                togo++;
+                break;
+            case 'UnaMas!':
+                unamas++;
+                break;
+            case 'Five Guys':
+                fiveGuys++;
+                break;
+            default:
+                alert("error" + rest);
+        }
+        genChar();
+    }
 
+    //Generate Chart
+    function genChar() {
+        var chart = c3.generate({
+            bindto: '#chart',
+            data: {
+                columns: [
+                    ['In-n-Out', inout],
+                    ['Daily Bagel Cafe', bagel],
+                    ['Teo Chow Noodles', noodles],
+                    ['De Afghanan Cuisine', afghanan],
+                    ['Anikis Sushi', sushi],
+                    ['Togos', togo],
+                    ['UnaMas!', unamas],
+                    ['Five Guys', fiveGuys]
+                ],
+                type: 'donut'
+            },
+            donut: {
+                title: "Restaurant Frequency"
+            }
+        });
     }
 
 });
