@@ -17,28 +17,29 @@
     <body>
 
         <div class="container">
-            <div class="row clearfix">
-                <div class="col-md-offset-4">
-                    <h1>
-                       Restaurant App
-                    </h1>
-                </div>
-            </div> <!-- End Row Title -->
+        <br /><br />
+            <div class="well">
+                <div class="row clearfix">
+                    <div class="col-md-offset-4">
+                        <h1>
+                           Restaurant App
+                        </h1>
+                    </div>
+                </div> <!-- End Row Title -->
 
-            <div class="row">
-                <div class="well">
-                <div class="col-md-offset">
-                    <label>User Name:</label>
-                    <input type="text" id="un" name="UserName" />
-                    <br /><br />
-                </div>
+                <div class="row">
+                    <div class="col-md-offset">
+                        <label>User Name:</label>
+                        <input type="text" id="un" name="UserName" />
+                        <br /><br />
+                    </div>
                 </div>
             </div> <!-- end row user name -->
 
-            <div class="row clearfix">
-                <div class="well">
+            <div class="well">
+                <div class="row clearfix">
                     <div class="col-md-6 column">
-                        <h3><strong>Resturants</strong></h3>
+                        <h3><strong>Restaurants</strong></h3>
                         <ul class="list-unstyled list-group">
                             <li id="rest1"  class="restaurant list-group-item scaled">
                                 In-n-Out
@@ -66,313 +67,317 @@
                             </li>
                         </ul>
                     </div><!-- End row restaurant list -->
-                </div>
 
-                <!-- Begin Restaurant 1 -->
-                <div class="col-md-offset-7 column">
-                    <h3 id="nameDiv" style="display:none"></h3>
-                    <div class="menu" id="menuItemsrest1" style="display:none" >
-                        <ul class="list-group list-unstyled"  id="checkboxes">
-                            <li class="list-group-item"><input type="checkbox" name="Cheeseburger" />
-                                Cheeseburger
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="Hamburger"/>
-                                Hamburger
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="Fries"/>
-                                Fries
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="Double-Double"/>
-                                Double-Double
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="3x3" />
-                                3x3
-                            </li>
-                            <li class="list-group-item"><input type="checkbox"  name="4x4" />
-                                4x4
-                            </li>
 
-                            <li class="list-group-item"><input type="checkbox" name="Protein Style"/>
-                                Protein Style
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="Animal Style" />
-                                Animal Style
-                            </li>
-                        </ul>
-                        <div>
-                           <button id="button" class="btn btn-primary pull-right">Submit</button>
+                    <!-- Begin Restaurant 1 -->
+                    <div class="col-md-offset-6 column">
+                        <h3 id="nameDiv" style="display:none"></h3>
+                        <div class="menu" id="menuItemsrest1" style="display:none" >
+                            <ul class="list-group list-unstyled"  id="checkboxes">
+                                <li class="list-group-item"><input type="checkbox" name="Cheeseburger" />
+                                    Cheeseburger
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="Hamburger"/>
+                                    Hamburger
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="Fries"/>
+                                    Fries
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="Double-Double"/>
+                                    Double-Double
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="3x3" />
+                                    3x3
+                                </li>
+                                <li class="list-group-item"><input type="checkbox"  name="4x4" />
+                                    4x4
+                                </li>
+
+                                <li class="list-group-item"><input type="checkbox" name="Protein Style"/>
+                                    Protein Style
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="Animal Style" />
+                                    Animal Style
+                                </li>
+                            </ul>
+                            <div>
+                               <button id="button" class="btn btn-primary pull-right">Submit</button>
+                            </div>
                         </div>
+                    <!-- End restaurant 1 -->
+
+
+                    <!-- Begin Restaurant 2 -->
+                        <div class="menu" id="menuItemsrest2" style="display:none" >
+                            <ul class="list-group list-unstyled"  id="checkboxes">
+                                <li class="list-group-item">
+                                    <input type="checkbox" name="Ceasar Salad" />
+                                    Caesar Salad W/ Chicken Breast
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="checkbox" name="B.L.T."/>
+                                    B.l.t. (bacon, Lettuce & Tomato)
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="checkbox" name="Roast Beef / Ham / Salami"/>
+                                    Roast Beef / Ham / Salami
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="checkbox" name="Pastrami"/>
+                                    Pastrami (served Hot Or Cold)
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="checkbox" name="Turkey / Chicken Breast" />
+                                    Turkey / Chicken Breast
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="checkbox"  name="Chicken Salad" />
+                                   Chicken Salad Supreme (chicken Salad, Cheese & Avocado)
+                                </li>
+
+                                <li class="list-group-item">
+                                    <input type="checkbox" name="Supreme"/>
+                                   Supreme (roast Beef, Ham, & Cheese)
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="checkbox" name="Nova Lox & Cream Cheese" />
+                                    Nova Lox & Cream Cheese
+                                </li>
+                            </ul>
+                            <div>
+                                <button id="button" class="btn btn-primary pull-right">Submit</button>
+                            </div>
+                        </div>
+                    <!-- End restaurant 2 -->
+
+                    <!-- Begin restaurant 3 -->
+                        <div class="menu" id="menuItemsrest3" style="display:none" >
+                            <ul class="list-group list-unstyled"  id="checkboxes">
+                                <li class="list-group-item"><input type="checkbox" name="Teo Chow House Pan Fried Noodles" />
+                                    Teo Chow House Pan Fried Noodles
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="Black Bean Sauce Chicken or Beef over Rice"/>
+                                    Black Bean Sauce Chicken or Beef over Rice
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="Broccoli & Chicken"/>
+                                    Broccoli & Chicken
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="Salt & Pepper Fish Fillet"/>
+                                    Salt & Pepper Fish Fillet
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" data-price="5" name="Mongolian Beef" />
+                                    Mongolian Beef
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" data-price="5" name="Salt & Pepper Chicken Wings" />
+                                    Salt & Pepper Chicken Wings <span class="pull-right">$5.00</span>
+                                </li>
+
+                                <li class="list-group-item"><input type="checkbox" name="Lemon Chicken"/>
+                                    Lemon Chicken
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="General" />
+                                    General
+                                </li>
+                            </ul>
+                            <div>
+                                <button id="btn" class="btn btn-primary pull-right">Submit</button>
+                            </div>
+                        </div> <!-- Teo Chow Noodles -->
+                    <!-- End restaurant 3 -->
+
+
+                        <!-- Begin restaurant 4 -->
+                        <div class="menu" id="menuItemsrest4" style="display:none" >
+                            <ul class="list-group list-unstyled"  id="checkboxes">
+                                <li class="list-group-item"><input type="checkbox" name="Lamb Kabob" />
+                                    Lamb Kabob
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="Chicken Kabob"/>
+                                    Chicken Kabob
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="Qabili Pallow"/>
+                                    RICE SPECIALTIES - Qabili Pallow <br />
+                                    Basmati rice with lamb shank topped with carrots and raisins
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="Shami Kabob"/>
+                                    Shami Kabob
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="Teka Kabob" />
+                                    Teka Kabob
+                                </li>
+                                <li class="list-group-item"><input type="checkbox"  name="Chicken & Teka" />
+                                    COMBINATION KABOB - Chicken & Teka
+                                </li>
+
+                                <li class="list-group-item"><input type="checkbox" name="Shami & Chicken"/>
+                                    Shami & Chicken
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="Chicken, Beef & Chaplil" />
+                                    Chicken, Beef & Chapli
+                                </li>
+                            </ul>
+                            <div>
+                                <button id="btn" class="btn btn-primary pull-right">Submit</button>
+                            </div>
+                        </div> <!--De Afghanan Cuisine-->
+                        <!-- End restaurant 4 -->
+
+                        <!-- Begin restaurant 5 -->
+                        <!-- Aniki's Sushi -->
+                        <div class="menu" id="menuItemsrest5" style="display:none" >
+                            <ul class="list-group list-unstyled"  id="checkboxes">
+                                <li class="list-group-item"><input type="checkbox" name="Chicken Teriyaki" />
+                                    Chicken Teriyaki w/ miso soup, salad, and rice
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="Beef Teriyaki"/>
+                                    Beef Teriyaki
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="Salmon Teriyaki"/>
+                                    Salmon Teriyaki w/ miso soup, salad, and rice
+                                                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="Spicy BBQ Chicken"/>
+                                    Spicy BBQ Chicken w/ miso soup, salad, and rice
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="Chicken Udon" />
+                                    Chicken Udon w/ salad
+                                </li>
+                                <li class="list-group-item"><input type="checkbox"  name="Beef Udon" />
+                                    Beef Udon w/ salad
+                                </li>
+
+                                <li class="list-group-item"><input type="checkbox" name="Vegetable Udon"/>
+                                    Vegetable Udon w/ salad
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="Seafood Udon" />
+                                    Seafood Udon (Mussels, Red Snapper Crab, Scallop)
+                                </li>
+                            </ul>
+                            <div>
+                                <button id="btn" class="btn btn-primary pull-right">Submit</button>
+                            </div>
+                        </div>  <!-- Aniki's Sushi -->
+                        <!-- End restaurant 5 -->
+
+                        <!-- Begin restaurant 6 -->
+                        <!-- Togo's -->
+                        <div class="menu" id="menuItemsrest6" style="display:none" >
+                            <ul class="list-group list-unstyled"  id="checkboxes">
+                                <li class="list-group-item"><input type="checkbox" name="Ham & Cheese" />
+                                    Ham & Cheese
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="Roast Beef"/>
+                                    Roast Beef
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="Turkey, Roast Beef & Cheese"/>
+                                    Turkey, Roast Beef & Cheese
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="The Italian"/>
+                                    The Italian
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="Salami & Cheese" />
+                                    Salami & Cheese
+                                </li>
+                                <li class="list-group-item"><input type="checkbox"  name="Meatball" />
+                                    Meatball
+                                </li>
+
+                                <li class="list-group-item"><input type="checkbox" name="The Clubhouse"/>
+                                    The Clubhouse
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="Pepperjack Pastrami" />
+                                    Pepperjack Pastrami
+                                </li>
+                            </ul>
+                            <div>
+                                <button id="btn" class="btn btn-primary pull-right">Submit</button>
+                            </div>
+                        </div>  <!-- Togo's -->
+                        <!-- End restaurant 6 -->
+
+                        <!-- Begin restaurant 7 -->
+                        <!-- Unamas-->
+                        <div class="menu" id="menuItemsrest7" style="display:none" >
+                            <ul class="list-group list-unstyled"  id="checkboxes">
+                                <li class="list-group-item"><input type="checkbox" name="California style burrito" />
+                                    California style burrito
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="Chicken burrito"/>
+                                    Chicken burrito
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="Steak burrito"/>
+                                    Steak burrito
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="Foghead burrito"/>
+                                    Foghead burrito
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="Taco & Quesadilla plate" />
+                                    Taco & Quesadilla plate
+                                </li>
+                                <li class="list-group-item"><input type="checkbox"  name="Faijita plate" />
+                                    Faijita plate
+                                </li>
+
+                                <li class="list-group-item"><input type="checkbox" name="Crispy Taco Salad"/>
+                                    Crispy Taco Salad
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="Ceasar Salad" />
+                                    Ceasar Salad
+                                </li>
+                            </ul>
+                            <div>
+                                <button id="btn" class="btn btn-primary pull-right">Submit</button>
+                            </div>
+                        </div>  <!-- UnaMas -->
+                        <!-- End restaurant 7 -->
+
+                        <!-- Begin restaurant 8 -->
+                        <!-- five guys -->
+                        <div class="menu" id="menuItemsrest8" style="display:none" >
+                            <ul class="list-group list-unstyled"  id="checkboxes">
+                                <li class="list-group-item"><input type="checkbox" name="Hamburger" />
+                                    Hamburger
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="Cheeseburger"/>
+                                    Cheeseburger
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="Bacon Burger"/>
+                                    Bacon Burger
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="Bacon Cheeseburger"/>
+                                    Bacon Cheeseburger
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="Little Hamburger" />
+                                    Little Hamburger
+                                </li>
+                                <li class="list-group-item"><input type="checkbox"  name="Little Cheeseburger" />
+                                    Little Cheeseburger
+                                </li>
+
+                                <li class="list-group-item"><input type="checkbox" name="Little Bacon Burger"/>
+                                    Little Bacon Burger
+                                </li>
+                                <li class="list-group-item"><input type="checkbox" name="Little Bacon Cheeseburger" />
+                                    Little Bacon Cheeseburger
+                                </li>
+                            </ul>
+                            <div>
+                                <button id="btn" class="btn btn-primary pull-right">Submit</button>
+                            </div>
+                        </div>  <!--  five guys -->
+                        <!-- End restaurant 8 -->
+                        <span><br /><br /></span>
                     </div>
-                <!-- End restaurant 1 -->
-
-
-                <!-- Begin Restaurant 2 -->
-                    <div class="menu" id="menuItemsrest2" style="display:none" >
-                        <ul class="list-group list-unstyled"  id="checkboxes">
-                            <li class="list-group-item">
-                                <input type="checkbox" name="Ceasar Salad" />
-                                Caesar Salad W/ Chicken Breast
-                            </li>
-                            <li class="list-group-item">
-                                <input type="checkbox" name="B.L.T."/>
-                                B.l.t. (bacon, Lettuce & Tomato)
-                            </li>
-                            <li class="list-group-item">
-                                <input type="checkbox" name="Roast Beef / Ham / Salami"/>
-                                Roast Beef / Ham / Salami
-                            </li>
-                            <li class="list-group-item">
-                                <input type="checkbox" name="Pastrami"/>
-                                Pastrami (served Hot Or Cold)
-                            </li>
-                            <li class="list-group-item">
-                                <input type="checkbox" name="Turkey / Chicken Breast" />
-                                Turkey / Chicken Breast
-                            </li>
-                            <li class="list-group-item">
-                                <input type="checkbox"  name="Chicken Salad" />
-                               Chicken Salad Supreme (chicken Salad, Cheese & Avocado)
-                            </li>
-
-                            <li class="list-group-item">
-                                <input type="checkbox" name="Supreme"/>
-                               Supreme (roast Beef, Ham, & Cheese)
-                            </li>
-                            <li class="list-group-item">
-                                <input type="checkbox" name="Nova Lox & Cream Cheese" />
-                                Nova Lox & Cream Cheese
-                            </li>
-                        </ul>
-                        <div>
-                            <button id="button" class="btn btn-primary pull-right">Submit</button>
-                        </div>
-                    </div>
-                <!-- End restaurant 2 -->
-
-                <!-- Begin restaurant 3 -->
-                    <div class="menu" id="menuItemsrest3" style="display:none" >
-                        <ul class="list-group list-unstyled"  id="checkboxes">
-                            <li class="list-group-item"><input type="checkbox" name="Teo Chow House Pan Fried Noodles" />
-                                Teo Chow House Pan Fried Noodles
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="Black Bean Sauce Chicken or Beef over Rice"/>
-                                Black Bean Sauce Chicken or Beef over Rice
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="Broccoli & Chicken"/>
-                                Broccoli & Chicken
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="Salt & Pepper Fish Fillet"/>
-                                Salt & Pepper Fish Fillet
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" data-price="5" name="Mongolian Beef" />
-                                Mongolian Beef
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" data-price="5" name="Salt & Pepper Chicken Wings" />
-                                Salt & Pepper Chicken Wings <span class="pull-right">$5.00</span>
-                            </li>
-
-                            <li class="list-group-item"><input type="checkbox" name="Lemon Chicken"/>
-                                Lemon Chicken
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="General" />
-                                General
-                            </li>
-                        </ul>
-                        <div>
-                            <button id="btn" class="btn btn-primary pull-right">Submit</button>
-                        </div>
-                    </div> <!-- Teo Chow Noodles -->
-                <!-- End restaurant 3 -->
-
-
-                    <!-- Begin restaurant 4 -->
-                    <div class="menu" id="menuItemsrest4" style="display:none" >
-                        <ul class="list-group list-unstyled"  id="checkboxes">
-                            <li class="list-group-item"><input type="checkbox" name="Lamb Kabob" />
-                                Lamb Kabob
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="Chicken Kabob"/>
-                                Chicken Kabob
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="Qabili Pallow"/>
-                                RICE SPECIALTIES - Qabili Pallow <br />
-                                Basmati rice with lamb shank topped with carrots and raisins
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="Shami Kabob"/>
-                                Shami Kabob
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="Teka Kabob" />
-                                Teka Kabob
-                            </li>
-                            <li class="list-group-item"><input type="checkbox"  name="Chicken & Teka" />
-                                COMBINATION KABOB - Chicken & Teka
-                            </li>
-
-                            <li class="list-group-item"><input type="checkbox" name="Shami & Chicken"/>
-                                Shami & Chicken
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="Chicken, Beef & Chaplil" />
-                                Chicken, Beef & Chapli
-                            </li>
-                        </ul>
-                        <div>
-                            <button id="btn" class="btn btn-primary pull-right">Submit</button>
-                        </div>
-                    </div> <!--De Afghanan Cuisine-->
-                    <!-- End restaurant 4 -->
-
-                    <!-- Begin restaurant 5 -->
-                    <!-- Aniki's Sushi -->
-                    <div class="menu" id="menuItemsrest5" style="display:none" >
-                        <ul class="list-group list-unstyled"  id="checkboxes">
-                            <li class="list-group-item"><input type="checkbox" name="Chicken Teriyaki" />
-                                Chicken Teriyaki w/ miso soup, salad, and rice
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="Beef Teriyaki"/>
-                                Beef Teriyaki
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="Salmon Teriyaki"/>
-                                Salmon Teriyaki w/ miso soup, salad, and rice
-                                                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="Spicy BBQ Chicken"/>
-                                Spicy BBQ Chicken w/ miso soup, salad, and rice
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="Chicken Udon" />
-                                Chicken Udon w/ salad
-                            </li>
-                            <li class="list-group-item"><input type="checkbox"  name="Beef Udon" />
-                                Beef Udon w/ salad
-                            </li>
-
-                            <li class="list-group-item"><input type="checkbox" name="Vegetable Udon"/>
-                                Vegetable Udon w/ salad
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="Seafood Udon" />
-                                Seafood Udon (Mussels, Red Snapper Crab, Scallop)
-                            </li>
-                        </ul>
-                        <div>
-                            <button id="btn" class="btn btn-primary pull-right">Submit</button>
-                        </div>
-                    </div>  <!-- Aniki's Sushi -->
-                    <!-- End restaurant 5 -->
-
-                    <!-- Begin restaurant 6 -->
-                    <!-- Togo's -->
-                    <div class="menu" id="menuItemsrest6" style="display:none" >
-                        <ul class="list-group list-unstyled"  id="checkboxes">
-                            <li class="list-group-item"><input type="checkbox" name="Ham & Cheese" />
-                                Ham & Cheese
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="Roast Beef"/>
-                                Roast Beef
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="Turkey, Roast Beef & Cheese"/>
-                                Turkey, Roast Beef & Cheese
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="The Italian"/>
-                                The Italian
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="Salami & Cheese" />
-                                Salami & Cheese
-                            </li>
-                            <li class="list-group-item"><input type="checkbox"  name="Meatball" />
-                                Meatball
-                            </li>
-
-                            <li class="list-group-item"><input type="checkbox" name="The Clubhouse"/>
-                                The Clubhouse
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="Pepperjack Pastrami" />
-                                Pepperjack Pastrami
-                            </li>
-                        </ul>
-                        <div>
-                            <button id="btn" class="btn btn-primary pull-right">Submit</button>
-                        </div>
-                    </div>  <!-- Togo's -->
-                    <!-- End restaurant 6 -->
-
-                    <!-- Begin restaurant 7 -->
-                    <!-- Unamas-->
-                    <div class="menu" id="menuItemsrest7" style="display:none" >
-                        <ul class="list-group list-unstyled"  id="checkboxes">
-                            <li class="list-group-item"><input type="checkbox" name="California style burrito" />
-                                California style burrito
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="Chicken burrito"/>
-                                Chicken burrito
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="Steak burrito"/>
-                                Steak burrito
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="Foghead burrito"/>
-                                Foghead burrito
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="Taco & Quesadilla plate" />
-                                Taco & Quesadilla plate
-                            </li>
-                            <li class="list-group-item"><input type="checkbox"  name="Faijita plate" />
-                                Faijita plate
-                            </li>
-
-                            <li class="list-group-item"><input type="checkbox" name="Crispy Taco Salad"/>
-                                Crispy Taco Salad
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="Ceasar Salad" />
-                                Ceasar Salad
-                            </li>
-                        </ul>
-                        <div>
-                            <button id="btn" class="btn btn-primary pull-right">Submit</button>
-                        </div>
-                    </div>  <!-- UnaMas -->
-                    <!-- End restaurant 7 -->
-
-                    <!-- Begin restaurant 8 -->
-                    <!-- five guys -->
-                    <div class="menu" id="menuItemsrest8" style="display:none" >
-                        <ul class="list-group list-unstyled"  id="checkboxes">
-                            <li class="list-group-item"><input type="checkbox" name="Hamburger" />
-                                Hamburger
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="Cheeseburger"/>
-                                Cheeseburger
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="Bacon Burger"/>
-                                Bacon Burger
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="Bacon Cheeseburger"/>
-                                Bacon Cheeseburger
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="Little Hamburger" />
-                                Little Hamburger
-                            </li>
-                            <li class="list-group-item"><input type="checkbox"  name="Little Cheeseburger" />
-                                Little Cheeseburger
-                            </li>
-
-                            <li class="list-group-item"><input type="checkbox" name="Little Bacon Burger"/>
-                                Little Bacon Burger
-                            </li>
-                            <li class="list-group-item"><input type="checkbox" name="Little Bacon Cheeseburger" />
-                                Little Bacon Cheeseburger
-                            </li>
-                        </ul>
-                        <div>
-                            <button id="btn" class="btn btn-primary pull-right">Submit</button>
-                        </div>
-                    </div>  <!--  five guys -->
-                    <!-- End restaurant 8 -->
                 </div>
             </div> <!-- End Menus Row -->
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Order History</h3>
-                    <div id="accordion">
+            <div class="well" >
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Order History</h3>
+                        <div id="accordion">
 
+                        </div>
+                        <br /><br />
                     </div>
-                    <br /><br />
                 </div>
             </div>
         </div> <!-- End Container -->
