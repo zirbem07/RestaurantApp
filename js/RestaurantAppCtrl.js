@@ -39,7 +39,7 @@ $(document).ready(function() {
         }).get();
 
         //find extras if any added
-        var extras = $("#extras").val();
+        var extras = $.trim($("#extras").val());
         alert(extras);
             //if the input field is empty
         if (extras == "") {
