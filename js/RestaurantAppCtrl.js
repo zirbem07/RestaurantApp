@@ -40,9 +40,9 @@ $(document).ready(function() {
             selected = selected.join(",");
 
             //check to see if the user entered a username
-            var un = $('#un').val();
+            var un = $.trim($('#un').val());
             if (un == "") {
-                alert("error You must enter a user name");
+                alert("Error: You must enter a user name");
             } else {
                 //valid order, store the data
                 var restaurant = $('#nameDiv').html();
@@ -104,23 +104,5 @@ $(document).ready(function() {
 
 
     }
-
-    /*for(var i in localStorage)
-    {
-        var arr = localStorage[i].split(":");
-        var name = arr[0];
-        var rest = arr[1];
-        var date = arr[2];
-        var total = arr[3];
-        var title = "<h3><strong>Name:</strong> " + name +"&nbsp<strong>Restaurant:</strong> "+ rest +"<strong>Date:</strong>  "+ date + " </h3>";
-        var arr2 = arr[4].split(",");
-        var items = "<div><ul>";
-        for(var index in arr2){
-            items += "<li>" + arr2[index] + "</li><br />";
-        }
-        items += "</ul><span class='pull-right'><strong>Total: </strong> $"+total+ " </span></div>";
-        var content = title + items;
-        $('#accordion').append(content);
-    }*/
 
 });
