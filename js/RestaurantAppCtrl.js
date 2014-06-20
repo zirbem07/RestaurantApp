@@ -48,7 +48,6 @@ $(document).ready(function() {
 
                 $('#un').val("");
 
-                $('#accordion').refresh();
             }
         } else {
             alert("You didn't select any items");
@@ -59,9 +58,30 @@ $(document).ready(function() {
     var storeData = function(key, data)
     {
         //Data Format: User Name : Restaurant Name : Date : Item1,Item2,Ect...
+        var myDataRef = new Firebase('https://blistering-fire-5092.firebaseio.com/');
+        myDataRef.push({data: data});
+        myDataRef.on('child_added', function(order) {
+            var items = order.val();
+            displayOrder(items.data);
+        });
         localStorage.setItem(key, data);
     }
-
+   /* function displayOrder(data) {
+        var arr = data.split(":")
+        var name = arr[0];
+        var rest = arr[1];
+        var date = arr[2];
+        var total = arr[3];
+        var title = "<h3><strong>Name:</strong> " + name +"&nbsp<strong>Restaurant:</strong> "+ rest +"<strong>Date:</strong>  "+ date + " </h3>";
+        var arr2 = arr[4].split(",");
+        var items = "<div><ul>";
+        for(var index in arr2){
+            items += "<li>" + arr2[index] + "</li><br />";
+        }
+        items += "</ul><span class='pull-right'><strong>Total: </strong> $"+total+ " </span></div>";
+        var content = title + items;
+        $('#accordion').append(content)
+    }*/
     for(var i in localStorage)
     {
         var arr = localStorage[i].split(":");
