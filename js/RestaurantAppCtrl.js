@@ -46,6 +46,8 @@ $(document).ready(function() {
             });
 
             $('#un').val("");
+
+            $('#accordion').refresh();
         }
 
     });
@@ -62,13 +64,14 @@ $(document).ready(function() {
         var name = arr[0];
         var rest = arr[1];
         var date = arr[2];
+        var total = arr[3];
         var title = "<h3><strong>Name:</strong> " + name +"&nbsp<strong>Restaurant:</strong> "+ rest +"<strong>Date:</strong>  "+ date + " </h3>";
-        var arr2 = arr[3].split(",");
+        var arr2 = arr[4].split(",");
         var items = "<div>";
         for(var index in arr2){
             items += "<span>" + arr2[index] + "</span><br />";
         }
-        items += "</div>";
+        items += "<span class='pull-right'><strong>Total: </strong> $"+total+ " </span></div>";
         var content = title + items;
         $('#accordion').append(content)
     }
