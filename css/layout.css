@@ -13,3 +13,11 @@ body
 {
     background-color: #317EAC; /*#F26C4F;*/
 }
+label
+{
+    margin-left: 20px;
+}
+.btn-primary
+{
+    margin-right: 20px;
+}
