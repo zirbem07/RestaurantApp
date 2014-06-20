@@ -104,7 +104,7 @@ $(document).ready(function() {
         var rest = $.trim(arr[1]);
         var date = arr[2];
         var total = arr[3];
-        var title = "<h3><strong>Name:</strong> " + name +"<strong> Restaurant:</strong> "+ rest +"<strong>Date:</strong>  "+ date + " </h3>";
+        var title = "<h3><strong>Name:</strong> " + name +"<strong>   Restaurant:</strong> "+ rest +"<strong>  Date:</strong>  "+ date + " </h3>";
         var arr2 = arr[4].split(",");
         var items = "<div>";
         for(var index in arr2){
