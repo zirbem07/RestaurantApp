@@ -1,5 +1,14 @@
 $(document).ready(function() {
 
+    //load firebase data
+    var myDataRef = new Firebase('https://blistering-fire-5092.firebaseio.com/');
+    myDataRef.once('value', function(dataSnapshot) {
+        dataSnapshot.forEach(function(allDataSnapshot) {
+            var data = allDataSnapshot.child('data').val();
+            displayOrderHistory(data);
+        });
+    });
+
     //when user clicks a restaurant, display the appropriate menu
     $(".restaurant").click(function () {
         $(".menu").hide();
@@ -57,11 +66,12 @@ $(document).ready(function() {
 
     });
 
+
     //store the data in Firebase
     var storeData = function(key, data)
     {
+        $('#accordion').empty();
         //Data Format: User Name : Restaurant Name : Date : Item1,Item2,Ect...
-        var myDataRef = new Firebase('https://blistering-fire-5092.firebaseio.com/');
         myDataRef.push({data: data});
         myDataRef.on('child_added', function(order) {
             var items = order.val();
@@ -70,13 +80,18 @@ $(document).ready(function() {
         //localStorage.setItem(key, data);
     }
 
+    //jQuery default accordion function
+    $(function () {
+        $("#accordion").accordion();
+    });
+
     function displayOrderHistory(data) {
         var arr = data.split(":")
         var name = arr[0];
         var rest = arr[1];
         var date = arr[2];
         var total = arr[3];
-        var title = "<h3><strong>Name:</strong> " + name +"<strong>Restaurant:</strong> "+ rest +"<strong>Date:</strong>  "+ date + " </h3>";
+        var title = "<h3><strong>Name:</strong> " + name +"<strong> Restaurant:</strong> "+ rest +"<strong>Date:</strong>  "+ date + " </h3>";
         var arr2 = arr[4].split(",");
         var items = "<div>";
         for(var index in arr2){
@@ -85,11 +100,9 @@ $(document).ready(function() {
         items += "<span class='pull-right'><strong>Total: </strong> $"+total+ " </span></div>";
         var content = title + items;
         $('#accordion').append(content);
+        $('#accordion').accordion('refresh');
 
-        //jQuery default accordion function
-        $(function () {
-            $("#accordion").accordion();
-        });
+
     }
 
     /*for(var i in localStorage)
