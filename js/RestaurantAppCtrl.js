@@ -31,7 +31,6 @@ $(document).ready(function() {
 
         if(selected != "") {
             selected = selected.join(",");
-
             //un email phone contactMethod restaurantName order
             var un = $('#un').val();
             if (un == "") {
