@@ -11,7 +11,7 @@ li.scaled:hover
 }
 body
 {
-    background-color: #317EAC; /*#F26C4F;*/
+    background-color: #317EAC; /*#F26C4F; #317EAC (standard)*/
 }
 label
 {
@@ -28,6 +28,7 @@ label
 .title
 {
     text-decoration:underline;
+    text-shadow: 5px 5px 5px #89a2c3;
 }
 #extras
 {

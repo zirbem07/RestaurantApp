@@ -38,6 +38,16 @@ $(document).ready(function() {
             return element.name;
         }).get();
 
+        //find extras if any added
+        var extras = $("#extras").val();
+        alert(extras);
+            //if the input field is empty
+        if (extras == "") {
+            extras="None"
+            //
+        };
+
+
         //make sure the user selected at least one order
         if(selected != "") {
             selected = selected.join(",");
