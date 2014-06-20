@@ -9,6 +9,10 @@ li.scaled:hover
 {
     margin-right: 10px;
 }
+.list-group-item
+{
+    border: 1px solid black;
+}
 body
 {
     background-color: #317EAC; /*#F26C4F; #317EAC (standard)*/
@@ -23,7 +27,8 @@ label
 }
 .well
 {
- background-color: #F5F4D9;
+    background-color: #F5F4D9;
+    border: 1px solid black;
 }
 .title
 {
@@ -33,6 +38,7 @@ label
 #extras
 {
     color : black;
+    width : 200px;
 }
 #chart
 {
